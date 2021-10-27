@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<style>
+body{
+font-family: 'Poppins', sans-serif;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Collapsibles</h2>
+
+<p>Collapsible Set:</p>
+
+<button type="button" class="collapsible">What is Data warehousing?</button>
+<div class="content">
+  <p>A Data Warehousing (DW) is process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyze business data from heterogeneous sources. The data warehouse is the core of the BI system which is built for data analysis and reporting.
+
+It is a blend of technologies and components which aids the strategic use of data. It is electronic storage of a large amount of information by a business which is designed for query and analysis instead of transaction processing. It is a process of transforming data into information and making it available to users in a timely manner to make a difference.</p>
+</div>
+
+<button type="button" class="collapsible">What is Dimension Table?</button>
+<div class="content">
+  <p>A Dimension Table is a table in a star schema of a data warehouse. Data warehouses are built using dimensional data models which consist of fact and dimension tables. Dimension tables are used to describe dimensions; they contain dimension keys, values and attributes.
+
+For example, the time dimension would contain every hour, day, week, month, quarter and year that has occurred since you started your business operations. Product dimension could contain a name and description of products you sell, their unit price, color, weight and other attributes as applicable. Attributes would be a customer’s first and last name, age, gender etc.</p>
+</div>
+
+<button type="button" class="collapsible">Describe the three tier Data warehouse architecture.</button>
+<div class="content">
+  <p>Data Warehouses usually have a three-level (tier) architecture that includes:
+
+Bottom Tier (Data Warehouse Server)
+Middle Tier (OLAP Server)
+Top Tier (Front end Tools).
+A bottom-tier that consists of the Data Warehouse server, which is almost always an RDBMS. It may include several specialized data marts and a metadata repository.
+
+Data from operational databases and external sources (such as user profile data provided by external consultants) are extracted using application program interfaces called a gateway. A gateway is provided by the underlying DBMS and allows customer programs to generate SQL code to be executed at a server.
+
+Examples of gateways contain ODBC (Open Database Connection) and OLE-DB (Open-Linking and Embedding for Databases), by Microsoft, and JDBC (Java Database Connection).
+A middle-tier which consists of an OLAP server for fast querying of the data warehouse.
+
+The OLAP server is implemented using either
+
+(1) A Relational OLAP (ROLAP) model, i.e., an extended relational DBMS that maps functions on multidimensional data to standard relational operations.
+
+(2) A Multidimensional OLAP (MOLAP) model, i.e., a particular purpose server that directly implements multidimensional information and operations.
+
+A top-tier that contains front-end tools for displaying results provided by OLAP, as well as additional tools for data mining of the OLAP-generated data.
+</p>
+</div>
+
+<button type="button" class="collapsible">Explain the top-down and bottom-up approach with advantages and
+disadvantages.</button>
+<div class="content">
+  <p><b>Bottom-up approach: </b>Advantages -> User and business awareness of the product. Benefits are realized in the early phases.
+You can replace many manual processes with early automation.
+You can implement password management for a large number of users.
+You do not have to develop custom adapters in the early phases.
+Your organization broadens identity management skills and understanding during the first phase.
+Tivoli Identity Manager is introduced to your business with less intrusion to your operations. <br> Disadvantages -> The organizational structure you establish might have to be changed in a later roll-out phase.
+Because of the immediate changes to repository owners and the user population, the roll-out will have a higher impact earlier and require greater cooperation.
+This strategy is driven by the existing infrastructure instead of the business processes. <br> <b>Top-down </b>-> Advantages: Your organization realizes a focused use of resources from the individual managed application.
+The first implementation becomes a showcase for the identity management solution.
+When the phases are completed for the managed application, you have implemented a deeper, more mature implementation of the identity management solution.
+Operation and maintenance resources are not initially impacted as severely as with the bottom-up approach.<br> Disadvantages -> The solution provides limited coverage in the first phases.
+A minimal percentage of user accounts are managed in the first phases.
+You might have to develop custom adapters at an early stage.
+The support and overall business will not realize the benefit of the solution as rapidly.
+The implementation cost is likely to be higher.</p>
+</div>
+
+
+<button type="button" class="collapsible">Fact vs Dimension</button>
+<div class="content">
+  <p>
+  <img src="https://i.ibb.co/mcM94KC/image.png"></img>
+  </p>
+</div>
+
+<button type="button" class="collapsible">Stages of Data Warehousing</button>
+<div class="content">
+  <p>
+There are at least seven stages to the creation of a data warehouse,
+Determining the business objectives and its key performance indicators.
+Collecting and analyzing the appropriate information.
+Identifying the core business processes that contribute the key data.
+Constructing a conceptual data model that shows how the data are displayed to the end-user.
+Locating the sources of the data and establishing a process for feeding data into the warehouse.
+Establish a tracking duration. Data warehouses can become unwieldy. Many are built with levels of archiving, so that older information is retained in less detail.
+Implementing the plan.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Data mining</button>
+<div class="content">
+  <p>
+Data mining is the process of analyzing massive volumes of data to discover business intelligence that helps companies solve problems, mitigate risks, and seize new opportunities. Data mining can answer business questions that traditionally were too time consuming to resolve manually. Using a range of statistical techniques to analyze data in different ways, users can identify patterns, trends and relationships they might otherwise miss. They can apply these findings to predict what is likely to happen in the future and take action to influence business outcomes.
+
+Data mining is used in many areas of business and research, including sales and marketing, product development, healthcare, and education. When used correctly, data mining can provide a profound advantage over competitors by enabling you to learn more about customers, develop effective marketing strategies, increase revenue, and decrease costs.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is OLTP?</button>
+<div class="content">
+  <p>
+OLTP is an operational system that supports transaction-oriented applications in a 3-tier architecture. It administers the day to day transaction of an organization. OLTP is basically focused on query processing, maintaining data integrity in multi-access environments as well as effectiveness that is measured by the total number of transactions per second. The full form of OLTP is Online Transaction Processing.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is OLAP?</button>
+<div class="content">
+  <p>
+OLAP stands for On-Line Analytical Processing. OLAP is a classification of software technology which authorizes analysts, managers, and executives to gain insight into information through fast, consistent, interactive access in a wide variety of possible views of data that has been transformed from raw information to reflect the real dimensionality of the enterprise as understood by the clients.
+
+OLAP implement the multidimensional analysis of business information and support the capability for complex estimations, trend analysis, and sophisticated data modeling. It is rapidly enhancing the essential foundation for Intelligent Solutions containing Business Performance Management, Planning, Budgeting, Forecasting, Financial Documenting, Analysis, Simulation-Models, Knowledge Discovery, and Data Warehouses Reporting. OLAP enables end-clients to perform ad hoc analysis of record in multiple dimensions, providing the insight and understanding they require for better decision making.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is the difference between OLTP and OLAP?</button>
+<div class="content">
+  <p>
+<img src="https://i.ibb.co/GRKRGWc/image.png"></img>
+  </p>
+</div>
+
+
+<button type="button" class="collapsible">What is Operational Data Stores? (ODS)</button>
+<div class="content">
+  <p>
+An ODS has been described by Inmon and Imhoff (1996) as a subject-oriented, integrated, volatile, current valued data store, containing only detailed corporate data. A data warehouse is a documenting database that includes associatively recent as well as historical information and may also include aggregate data.
+
+The ODS is a subject-oriented. It is organized around the significant information subject of an enterprise. In a university, the subjects may be students, lecturers and courses while in the company the subjects might be users, salespersons and products.
+
+The ODS is an integrated. That is, it is a group of subject-oriented record from a variety of systems to provides an enterprise-wide view of the information.
+
+The ODS is a current-valued. That is, an ODS is up-to-date and follow the current status of the data. An ODS does not contain historical information. Since the OLTP system data is changing all the time, data from underlying sources refresh the ODS as generally and frequently as possible.
+
+The ODS is volatile. That is, the data in the ODS frequently changes as new data refreshes the ODS.
+
+The ODS is a detailed. That is, ODS is detailed enough to serve the need of the operational management staff in the enterprise. The granularity of the information in the ODS does not have to be precisely the same as in the source OLTP system.
+
+<img src="https://i.ibb.co/WkPn2BJ/image.png"></img>
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is the difference between View and Materialized View?</button>
+<div class="content">
+  <p>
+  <img src="https://i.ibb.co/WnqNzj8/image.png"></img>
+  </p>
+</div>
+
+
+<button type="button" class="collapsible">What is ETL?</button>
+<div class="content">
+  <p>
+  The mechanism of extracting information from source systems and bringing it into the data warehouse is commonly called ETL, which stands for Extraction, Transformation and Loading.
+
+The ETL process requires active inputs from various stakeholders, including developers, analysts, testers, top executives and is technically challenging.
+
+To maintain its value as a tool for decision-makers, Data warehouse technique needs to change with business changes. ETL is a recurring method (daily, weekly, monthly) of a Data warehouse system and needs to be agile, automated, and well documented.
+<br>Extraction<br>Extraction is the operation of extracting information from a source system for further use in a data warehouse environment. This is the first stage of the ETL process.
+Extraction process is often one of the most time-consuming tasks in the ETL.
+The source systems might be complicated and poorly documented, and thus determining which data needs to be extracted can be difficult.
+The data has to be extracted several times in a periodic manner to supply all changed data to the warehouse and keep it up-to-date.
+<br>Transformation<br>Loose texts may hide valuable information. For example, XYZ PVT Ltd does not explicitly show that this is a Limited Partnership company.
+Different formats can be used for individual data. For example, data can be saved as a string or as three integers. Conversion and normalization that operate on both storage formats and units of measure to make data uniform.
+Matching that associates equivalent fields in different sources.
+Selection that reduces the number of source fields and records.
+<br>Loading<br>The Load is the process of writing the data into the target database. During the load step, it is necessary to ensure that the load is performed correctly and with as little resources as possible.
+
+Loading can be carried in two ways:
+
+Refresh: Data Warehouse data is completely rewritten. This means that older file is replaced. Refresh is usually used in combination with static extraction to populate a data warehouse initially.
+Update: Only those changes applied to source information are added to the Data Warehouse. An update is typically carried out without deleting or modifying preexisting data. This method is used in combination with incremental extraction to update data warehouses regularly.
+  </p>
+
+</div>
+<button type="button" class="collapsible">What are Aggregate tables?</button>
+<div class="content">
+  <p>
+<img src="https://i.ibb.co/q9MYFJR/image.png"></img>
+  </p>
+</div>
+
+
+</div>
+<button type="button" class="collapsible">What is a factless fact table?</button>
+<div class="content">	
+  <p>
+<img src="https://i.ibb.co/1Jms4G8/image.png"></img>
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Data Mart?</button>
+<div class="content">	
+  <p>
+A Data Mart is a subset of a directorial information store, generally oriented to a specific purpose or primary data subject which may be distributed to provide business needs. Data Marts are analytical record stores designed to focus on particular business functions for a specific community within an organization. Data marts are derived from subsets of data in a data warehouse, though in the bottom-up data warehouse design methodology, the data warehouse is created from the union of organizational data marts.
+  </p>
+</div>
+
+
+<button type="button" class="collapsible">What is Data Mart?</button>
+<div class="content">	
+  <p>
+A Data Mart is a subset of a directorial information store, generally oriented to a specific purpose or primary data subject which may be distributed to provide business needs. Data Marts are analytical record stores designed to focus on particular business functions for a specific community within an organization. Data marts are derived from subsets of data in a data warehouse, though in the bottom-up data warehouse design methodology, the data warehouse is created from the union of organizational data marts.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Star Schema?</button>
+<div class="content">	
+  <p>
+A star schema is the elementary form of a dimensional model, in which data are organized into facts and dimensions. A fact is an event that is counted or measured, such as a sale or log in. A dimension includes reference data about the fact, such as date, item, or customer.
+
+A star schema is a relational schema where a relational schema whose design represents a multidimensional data model. The star schema is the explicit data warehouse schema. It is known as star schema because the entity-relationship diagram of this schemas simulates a star, with points, diverge from a central table. The center of the schema consists of a large fact table, and the points of the star are the dimension tables.
+  </p>
+</div>
+
+
+
+
+
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
