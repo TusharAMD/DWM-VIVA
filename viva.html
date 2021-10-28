@@ -241,10 +241,598 @@ A star schema is the elementary form of a dimensional model, in which data are o
 A star schema is a relational schema where a relational schema whose design represents a multidimensional data model. The star schema is the explicit data warehouse schema. It is known as star schema because the entity-relationship diagram of this schemas simulates a star, with points, diverge from a central table. The center of the schema consists of a large fact table, and the points of the star are the dimension tables.
   </p>
 </div>
+<button type="button" class="collapsible">What is Snowflake Schema?</button>
+<div class="content">	
+  <p>
+A snowflake schema is equivalent to the star schema. "A schema is known as a snowflake if one or more dimension tables do not connect directly to the fact table but must join through other dimension tables."
+
+The snowflake schema is an expansion of the star schema where each point of the star explodes into more points. It is called snowflake schema because the diagram of snowflake schema resembles a snowflake. Snowflaking is a method of normalizing the dimension tables in a STAR schemas. When we normalize all the dimension tables entirely, the resultant structure resembles a snowflake with the fact table in the middle.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is called data cleaning?</button>
+<div class="content">	
+  <p>
+Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled. If data is incorrect, outcomes and algorithms are unreliable, even though they may look correct. There is no one absolute way to prescribe the exact steps in the data cleaning process because the processes will vary from dataset to dataset. But it is crucial to establish a template for your data cleaning process so you know you are doing it the right way every time.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Meta Data?</button>
+<div class="content">	
+  <p>
+Metadata is data about the data or documentation about the information which is required by the users. In data warehousing, metadata is one of the essential aspects.
+
+Metadata includes the following:
+
+The location and descriptions of warehouse systems and components.
+Names, definitions, structures, and content of data-warehouse and end-users views.
+Identification of authoritative data sources.
+Integration and transformation rules used to populate data.
+Integration and transformation rules used to deliver information to end-user analytical tools.
+Subscription information for information delivery to analysis subscribers.
+Metrics used to analyze warehouses usage and performance.
+Security authorizations, access control list, etc.
+Metadata is used for building, maintaining, managing, and using the data warehouses. Metadata allow users access to help understand the content and find data.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Information Package diagram?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/txngk8V/image.png"></img>
+  </p>
+</div>
+
+<button type="button" class="collapsible">What are reasons for dirty data?</button>
+<div class="content">	
+  <p>
+  In addition to incorrect data entry, dirty data can be generated due to the improper methods in data management and data storage. Some dirty data types are explained below:
+
+Incorrect data - To ensure that the data is valid or correct, the value entered should comply with the field's valid values. For instance, the value entered in the month field should range from 1 to 12, or an individual's age has to be less than 130. The data value correctness may be programmatically enforced by means of lookup tables or with edit checks.
+Inaccurate data - It is possible that a data value can be correct, but not accurate. At times, it is practical to examine against other files or fields to find out if the data value is accurate based on the context it is used. Still, accuracy can often only be validated by manual verification.
+Business rule violations - Data that violates business rule is another type of dirty data. For instance, an effective date must always come before an expiry date. Another business rule violation example can be a patient's Medicare insurance claim where the patient may be still under the retirement age and fails to be entitled to Medicare.
+Inconsistent data - Unchecked data redundancy leads to data inconsistencies. Each organization is affected with inconsistent and repetitive data. This is particularly typical with customer data.
+Incomplete data - Data with missing values is the main type of incomplete data.
+Duplicate data - Duplicate data may occur due to repeated submissions, improper data joining or user error.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is Data Cube?</button>
+<div class="content">	
+  <p>
+  When data is grouped or combined in multidimensional matrices called Data Cubes. The data cube method has a few alternative names or a few variants, such as "Multidimensional databases," "materialized views," and "OLAP (On-Line Analytical Processing)."
+
+The general idea of this approach is to materialize certain expensive computations that are frequently inquired.
+
+For example, a relation with the schema sales (part, supplier, customer, and sale-price) can be materialized into a set of eight views as shown in fig, where psc indicates a view consisting of aggregate function value (such as total-sales) computed by grouping three attributes part, supplier, and customer, p indicates a view composed of the corresponding aggregate function values calculated by grouping part alone, etc.
+  </p>
+</div>
+
+<button type="button" class="collapsible">What are steps in data cleansing?</button>
+<div class="content">	
+  <p>
+  Step 1: Remove duplicate or irrelevant observations<br>
+  Step 2: Fix structural errors<br>
+  Step 3: Filter unwanted outliers<br>
+  Step 4: Handle missing data<br>
+  Step 5: Validate and QA<br>
+  </p>
+</div>
+
+<button type="button" class="collapsible">What is called Dimensional Modelling?</button>
+<div class="content">	
+  <p>
+ Dimensional Modeling (DM) is a data structure technique optimized for data storage in a Data warehouse. The purpose of dimensional modeling is to optimize the database for faster retrieval of data. The concept of Dimensional Modelling was developed by Ralph Kimball and consists of “fact” and “dimension” tables.
+
+A dimensional model in data warehouse is designed to read, summarize, analyze numeric information like values, balances, counts, weights, etc. in a data warehouse. In contrast, relation models are optimized for addition, updating and deletion of data in a real-time Online Transaction System.
+
+These dimensional and relational models have their unique way of data storage that has specific advantages.
+
+For instance, in the relational mode, normalization and ER models reduce redundancy in data. On the contrary, dimensional model in data warehouse arranges data in such a way that it is easier to retrieve information and generate reports.
+</p>
+</div>
+
+<button type="button" class="collapsible">What is Surrogate Key?</button>
+<div class="content">	
+  <p>
+  A surrogate key in DBMS is the key or can say a unique identifier that uniquely identifies an object or an entity in their respective fields. It is the unique identifier in a database. A surrogate key is a key with virtual or no actual reason, and it is used for representing the existence for data analysis. Thus, a surrogate key is used for representing existence for data analysis. It is the unique identifier in a database. It represents an outside entity as a database object but is not visible to the user and application. A surrogate key is also known by various other names, which are pseudo key, technical key, synthetic key, arbitrary unique identifier, entity identifier and database sequence number.
+</p>
+</div>
 
 
+<button type="button" class="collapsible"> Dimensional Modeling Advantage and Disadvantage?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/WBy6Sk9/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What is the difference between ER Modeling and Dimensional Modeling?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/2vCcHBs/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What are the steps to build the data warehouse?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/dJDBYg6/image.png"></img>
+</p>
+</div>
 
 
+<button type="button" class="collapsible"> What are the different types of data warehousing?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/D4VcKh5/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What are the tools available for ETL?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/92dj3C7/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What is the difference between metadata and data dictionary?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/7Rz0QWp/image.png"></img>
+</p>
+</div>
+
+
+<button type="button" class="collapsible"> Differentiate Between Data Mining And Data Warehousing?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/sPHdh5k/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What Is Discrete And Continuous Data In Data Mining World?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/NpH0R3R/image.png"></img>
+</p>
+</div>
+
+<button type="button" class="collapsible"> What Is Discrete And Continuous Data In Data Mining World?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/NpH0R3R/image.png"></img>
+</p>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> What Is A Decision Tree Algorithm?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/sRrcJQ8/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> What Is A Decision Tree Algorithm?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/sRrcJQ8/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> What Is Naive Bayes Algorithm?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/QJ38Vfm/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> Explain Clustering Algorithm?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/ByyFxhS/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> Explain Association Algorithm In Data Mining?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/zH37vhT/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> What Do U Mean By Partitioning Method?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/9r2fngr/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> Mention Some Of The Data Mining Techniques?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/8grhFfP/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible"> Define Binary Variables? And What Are The Two Types Of Binary
+Variables?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/Rhgc5r2/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain The Issues Regarding Classification And Prediction? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/LCRkfGb/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What Are The Steps Involved In KDD Process? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/Jjvkttg/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What Is A Lookup Table? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/vjj0Bcc/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  What Is Attribute Selection Measure? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/1MDqKH4/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What is the Use of Regression?</button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/MB37xTg/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What Is Hierarchical Method? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/Nt4mmQw/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What is the difference between the Rollup and Cube </button>
+<div class="content">	
+  <p>
+  The ROLLUP clause extends GROUP BY to return a row containing a subtotal for each group of rows, plus a row containing a total for all the groups.<br>
+The CUBE clause extends GROUP BY to return rows containing a subtotal for all combinations of columns, plus a row containing the grand total.
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What Are the Different Problems that "Data Mining" Can Solve? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/dQkCzvf/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Which are the methods for Evaluating the Accuracy of a Classifier? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/xsggFrL/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What are the Types of data in Cluster analysis? </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/xsggFrL/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  List the Partitioning Methods & Hierarchical Methods </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/42XC8CD/image.png"></img>
+  <img src="https://i.ibb.co/ZcMWv9y/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  List the Partitioning Methods & Hierarchical Methods </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/42XC8CD/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Define Market Basket Analysis (MBA). Any example. </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/f0v64Kz/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Applications of MBA. </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/sH5jgz8/image.png"></img>
+For example, a customer's visits to a grocery store or an online purchase from a virtual store on the Web are typical customer transactions. Retailers accumulate huge collections of transactions by recording business activities over time. One common analysis run against a transactions database is to find sets of items, or itemsets, that appear together in many transactions. A business can use knowledge of these patterns to improve the Placement of these items in the store or the layout of mail- order catalog page and Web pages. An itemset containing i items is called an i-itemset. The percentage of transactions that contain an itemset is called the itemset's support. For an itemset to be interesting, its support must be higher than a user-specified minimum. Such itemsets are said to be frequent.
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Applications of MBA. </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/sH5jgz8/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Define the terms Frequent Item sets, Closed Item sets, and Association
+Rule </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/chPYmRn/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Define the terms Frequent Item sets, Closed Item sets, and Association
+Rule </button>
+<div class="content">	
+  <p>
+  <img src="https://i.ibb.co/chPYmRn/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What do you mean by Frequent Pattern Mining? </button>
+<div class="content">	
+  <p>
+  Frequent patterns are itemsets, subsequences, or substructures that appear in a data set with frequency no less than a user-specified threshold. For example, a set of items, such as milk and bread, that appear frequently together in a transaction data set, is a frequent itemset. A subsequence, such as buying first a PC, then a digital camera, and then a memory card, if it occurs frequently in a shopping history database, is a (frequent) sequential pattern. A substructure can refer to different structural forms, such as subgraphs, subtrees, or sublattices, which may be combined with itemsets or subsequences. If a substructure occurs frequently in a graph database, it is called a (frequent) structural pattern. Finding frequent patterns plays an essential role in mining associations, correlations, and many other interesting relationships among data. Moreover, it helps in data indexing, classification, clustering, and other data mining tasks as well. Frequent pattern mining is an important data mining task and a focused theme in data mining research. Abundant literature has been dedicated to this research and tremendous progress has been made, ranging from efficient and scalable algorithms for frequent itemset mining in transaction databases to numerous research frontiers, such as sequential pattern mining, structured pattern mining, correlation mining, associative classification, and frequent pattern-based clustering, as well as their broad applications
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What do you mean by Frequent Pattern Mining? </button>
+<div class="content">	
+  <p>
+  Frequent patterns are itemsets, subsequences, or substructures that appear in a data set with frequency no less than a user-specified threshold. For example, a set of items, such as milk and bread, that appear frequently together in a transaction data set, is a frequent itemset. A subsequence, such as buying first a PC, then a digital camera, and then a memory card, if it occurs frequently in a shopping history database, is a (frequent) sequential pattern. A substructure can refer to different structural forms, such as subgraphs, subtrees, or sublattices, which may be combined with itemsets or subsequences. If a substructure occurs frequently in a graph database, it is called a (frequent) structural pattern. Finding frequent patterns plays an essential role in mining associations, correlations, and many other interesting relationships among data. Moreover, it helps in data indexing, classification, clustering, and other data mining tasks as well. Frequent pattern mining is an important data mining task and a focused theme in data mining research. Abundant literature has been dedicated to this research and tremendous progress has been made, ranging from efficient and scalable algorithms for frequent itemset mining in transaction databases to numerous research frontiers, such as sequential pattern mining, structured pattern mining, correlation mining, associative classification, and frequent pattern-based clustering, as well as their broad applications
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain Apriori Algorithm </button>
+<div class="content">	
+  <p>
+ Apriori algorithm is given by R. Agrawal and R. Srikant in 1994 for finding frequent itemsets in a dataset for boolean association rule. Name of the algorithm is Apriori because it uses prior knowledge of frequent itemset properties. We apply an iterative approach or level-wise search where k-frequent itemsets are used to find k+1 itemsets.
+To improve the efficiency of level-wise generation of frequent itemsets, an important property is used called Apriori property which helps by reducing the search space.
+Apriori Property –
+All non-empty subset of frequent itemset must be frequent. The key concept of Apriori algorithm is its anti-monotonicity of support measure. Apriori assumes that
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain Association Rule Generation </button>
+<div class="content">	
+  <p>
+ Association rule mining finds interesting associations and relationships among large sets of data items. This rule shows how frequently a itemset occurs in a transaction. A typical example is Market Based Analysis.
+
+Market Based Analysis is one of the key techniques used by large relations to show associations between items.It allows retailers to identify relationships between the items that people buy together frequently. Given a set of transactions, we can find rules that will predict the occurrence of an item based on the occurrences of other items in the transaction.
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  How to Improve the Efficiency of Apriori? </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/3R04dDv/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Describe the FP tree algorithm </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/6mBKFpf/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What are the benefits of FP tree structure?</button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/2NkCfwk/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What is Mining Frequent Itemsets without candidate generation?</button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/FxV6zBG/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain Mining Multilevel Association Rules</button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/y6y0FpR/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain approaches to Multidimensional Association Rules </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/2Ypt9k7/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain approaches to Multidimensional Association Rules </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/2Ypt9k7/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What are the benefits of web data mining? </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/1vR3X7m/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain the web Crawlers and its types </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/dm0XfxH/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Data harvesting </button>
+<div class="content">	
+  <p>
+They include web mining, data scraping, data extraction, web scraping, and many other names. Data harvesting has grown in popularity in part because the term is so descriptive. It derives from the agricultural process of harvesting, wherein a good is collected from a renewable resource. Data found on the internet certainly qualifies as a renewable resource as more is generated every day.
+
+To engage in data harvesting, a website is targeted, and the data from that site is extracted. That data can be pretty much anything the harvester wants. It might be simple text found on the page or within the page’s code. It could be directory information from a retail site. It might even be a series of images and videos. Or it could be all of those items at once.
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What is Virtual Web View </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/wM3BD6t/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain Web Content Mining, text mining </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/4WhFrct/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain the Page Rank algorithm </button>
+<div class="content">	
+  <p>
+PageRank (PR) is an algorithm used by Google Search to rank websites in their search engine results. PageRank was named after Larry Page, one of the founders of Google. PageRank is a way of measuring the importance of website pages. According to Google:
+
+PageRank works by counting the number and quality of links to a page to determine a rough estimate of how important the website is. The underlying assumption is that more important websites are likely to receive more links from other websites.
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain the HITS algorithm </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/4WhFrct/image.png"></img>
+</p>
+</div>
+</div>
+
+
+<div class="item-name">
+<button type="button" class="collapsible">  Explain the Clever algorithm </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/GsjZHx7/image.png"></img>
+</p>
+</div>
+</div>
+
+<div class="item-name">
+<button type="button" class="collapsible">  What is GINI Index? What is the equation? </button>
+<div class="content">	
+  <p>
+<img src = "https://i.ibb.co/fxgtDnz/image.png"></img>
+</p>
+</div>
+</div>
 
 
 </div>
